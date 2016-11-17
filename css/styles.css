@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fee;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff9f9;
+}
+
+.nav {
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav h1 {
+  float: left;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.menu {
+  float: right;
+  margin-top: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #777;
+  letter-spacing: 2px;
+  transition: opacity 200ms;
+}
+
+.menu a:hover {
+  opacity: 0.5;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding-left: 20px;
+}
+
+.nav:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.image {
+  width: 100%;
+  text-align: center;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.image img {
+  width: 60%;
+}
+
+.content {
+  width: 100%;
+  padding: 50px 20px;
+
+}
+
+.bio {
+  float: left;
+  width: 55%;
+}
+
+.bio h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.bio p {
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.social-media img {
+  padding: 20px 0 20px 0;
+  width: 50px;
+  opacity: 0.6;
+  transition: opacity 300ms;
+}
+
+.social-media img:hover {
+  opacity: 1;
+}
+
+.email {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(125, 103, 89);
+  width: 150px;
+  height: 45px;
+  background-color: rgb(250, 206, 178);
+  border: 2px solid rgb(175, 153, 139);
+  border-radius: 15px;
+  transition: background-color 800ms;
+}
+
+.email:hover {
+  cursor: pointer;
+  /*box-shadow: 5px -5px 3px rgb(230, 186, 158) inset;*/
+  background-color: rgb(240, 196, 168);
+}
+
+.photos {
+  float: right;
+  width: 45%;
+}
+
+.photos h3 {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.photos img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  float: right;
+  opacity: 0.7;
+  transition: opacity 400ms;
+}
+
+.photos img:hover {
+  opacity: 1;
+  z-index: 1;
+}
+
+.photos #four, .photos #seven {
+  clear: right;
+}
+
+.content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.subscribe {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fce5d6;
+}
+
+.subscribe p {
+  padding: 20px;
+}
+
+.subscribe input {
+  width: 280px;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: lighter;
+  background-color: #fff4ed;
+  border: 2px solid rgb(175, 153, 139);
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(125, 103, 89);
+  background-color: rgb(250, 206, 178);
+  border: 2px solid rgb(175, 153, 139);
+  border-radius: 15px;
+  transition: background-color 800ms;
+}
+
+.sign-up:hover {
+  cursor: pointer;
+  background-color: rgb(240, 196, 168);
+}
+
+p:last-child {
+  font-size: .8em;
+}
+
+@media (max-width: 1530px) {
+  .photos img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photos, .bio {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .content * {
+    float:none;
+  }
+
+  .photos {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  .photos h3, .bio h3 {
+    text-align: center;
+  }
+
+  .menu ul li {
+    letter-spacing: 0;
+    padding-left: 3px;
+    font-size: .8em;
+  }
+
+  .photos img {
+    float: none;
+    width: 130px;
+    height: 130px;
+
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 782px) {
+  .photos img {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+  }
+
+  h1 {
+    padding-top: 12px;
+    font-size: 1.2em;
+  }
+
+  .menu ul {
+    margin-top: -10px;
+  }
+  .menu ul li {
+    letter-spacing: 0;
+    padding-left: 3px;
+    font-size: .8em;
+    display: block;
+  }
+}
